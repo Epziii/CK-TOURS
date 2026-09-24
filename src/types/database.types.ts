@@ -20,7 +20,7 @@ export interface VehicleType {
   slug: string;
   category: VehicleCategory;
   passenger_capacity: number;
-  luggage_capacity: number;
+  luggage_capacity?: number;
   description: string;
 }
 
@@ -32,7 +32,7 @@ export interface Vehicle {
   year?: number;
   category: VehicleCategory;
   passenger_capacity: number;
-  luggage_capacity: number;
+  luggage_capacity?: number;
   ac_equipped: boolean;
   seating_type: string;
   features: string[];

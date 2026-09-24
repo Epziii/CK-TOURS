@@ -366,13 +366,12 @@ export const QuoteForm: React.FC = () => {
               onChange={(e) => setPreferredVehicle(e.target.value)}
               className="w-full px-4 py-3 rounded-xl border border-warm-300 text-sm focus:outline-none focus:ring-2 focus:ring-ceylon-600 bg-warm-50/50"
             >
-              <option value="High Roof Van (Toyota KDH)">High Roof Van (Toyota KDH — up to 6 pax)</option>
-              <option value="Flat Roof Van (Toyota KDH)">Flat Roof Van (Toyota KDH — up to 5 pax)</option>
-              <option value="Sedan (Toyota Premio/Axio)">Sedan (Toyota Premio / Axio — up to 3 pax)</option>
-              <option value="SUV (Toyota Prado / Honda)">SUV (Toyota Land Cruiser Prado — up to 4 pax)</option>
-              <option value="Mini Car (Suzuki/Daihatsu)">Mini Car (Suzuki Wagon R / Alto — 2 pax)</option>
-              <option value="Mini Bus (Toyota Coaster)">Mini Bus (Toyota Coaster — up to 15 pax)</option>
-              <option value="Large Coach Bus">Luxury Coach Bus (20+ pax)</option>
+              <option value="High Roof Van (Toyota KDH)">High Roof Van (Toyota KDH — up to 14 pax)</option>
+              <option value="Flat Roof Van (Toyota KDH)">Flat Roof Van (Toyota KDH — up to 9 pax)</option>
+              <option value="Sedan (Toyota Premio/Axio)">Sedan (Toyota Premio / Axio — up to 4 pax)</option>
+              <option value="SUV (Honda Vezel)">SUV (Honda Vezel — up to 4 pax)</option>
+              <option value="Mini Car (Suzuki/Daihatsu)">Mini Car (Suzuki Wagon R / Alto — up to 3 pax)</option>
+              <option value="Mini Bus (Toyota Coaster)">Mini Bus (Toyota Coaster — up to 25 pax)</option>
               <option value="No Preference / Recommend for me">No Preference (Recommend for me)</option>
             </select>
           </div>

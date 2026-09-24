@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Users, Briefcase, Wind, CheckCircle2, ArrowLeft, ArrowRight, Shield, Sparkles, MessageSquare, Car } from 'lucide-react';
+import { Users, Wind, CheckCircle2, ArrowLeft, ArrowRight, Shield, Sparkles, MessageSquare, Car, ShieldCheck } from 'lucide-react';
 import { vehicleService } from '../services/vehicleService';
 import { Vehicle } from '../types/database.types';
 import { BUSINESS_CONFIG } from '../services/quoteService';
@@ -95,20 +95,20 @@ export const VehicleDetailPage: React.FC = () => {
             <div className="grid grid-cols-3 gap-4 bg-white p-6 rounded-3xl border border-warm-200 shadow-soft text-center">
               <div className="p-3">
                 <Users className="w-6 h-6 text-gold-600 mx-auto mb-2" />
-                <div className="font-bold text-lg text-ceylon-950">{vehicle.passenger_capacity} Passengers</div>
-                <div className="text-xs text-gray-500">Max comfort capacity</div>
+                <div className="font-bold text-lg text-ceylon-950">Up to {vehicle.passenger_capacity}</div>
+                <div className="text-xs text-gray-500">Passenger Capacity</div>
               </div>
 
               <div className="p-3 border-x border-warm-100">
-                <Briefcase className="w-6 h-6 text-gold-600 mx-auto mb-2" />
-                <div className="font-bold text-lg text-ceylon-950">{vehicle.luggage_capacity} Luggage</div>
-                <div className="text-xs text-gray-500">Standard suitcases</div>
+                <Wind className="w-6 h-6 text-emerald-600 mx-auto mb-2" />
+                <div className="font-bold text-lg text-ceylon-950">{vehicle.ac_equipped ? 'Full A/C' : 'Standard'}</div>
+                <div className="text-xs text-gray-500">Climate Controlled</div>
               </div>
 
               <div className="p-3">
-                <Wind className="w-6 h-6 text-emerald-600 mx-auto mb-2" />
-                <div className="font-bold text-lg text-ceylon-950">{vehicle.ac_equipped ? 'Equipped' : 'Standard'}</div>
-                <div className="text-xs text-gray-500">Dual A/C system</div>
+                <ShieldCheck className="w-6 h-6 text-ceylon-700 mx-auto mb-2" />
+                <div className="font-bold text-lg text-ceylon-950">Dedicated</div>
+                <div className="text-xs text-gray-500">Private Chauffeur</div>
               </div>
             </div>
 

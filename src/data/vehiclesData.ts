@@ -1,13 +1,12 @@
 import { Vehicle, VehicleCategory } from '../types/database.types';
 
 export const VEHICLE_CATEGORIES: VehicleCategory[] = [
-  'Mini Car',
+  'High Roof Van',
+  'Flat Roof Van',
   'Sedan',
   'SUV',
-  'Flat Roof Van',
-  'High Roof Van',
-  'Mini Bus',
-  'Bus'
+  'Mini Car',
+  'Mini Bus'
 ];
 
 export const VEHICLES_DATA: Vehicle[] = [
@@ -18,24 +17,46 @@ export const VEHICLES_DATA: Vehicle[] = [
     model: 'HiAce KDH — High Roof Luxury Van',
     year: 2022,
     category: 'High Roof Van',
-    passenger_capacity: 6,
-    luggage_capacity: 6,
+    passenger_capacity: 14,
+    luggage_capacity: 0,
     ac_equipped: true,
     seating_type: 'Plush High-Back Individual Reclining Seats',
     features: [
       'Dual Zone High-Capacity Air Conditioning',
-      'Individual High-Back Reclining Seats',
-      'Generous Standing Room & Wide Windows',
-      'Large Luggage Compartment',
+      'Comfortable Reclining Seats',
+      'Generous Standing Room & Panoramic Wide Windows',
       'USB Mobile Charging Ports',
-      'Complimentary Bottled Water'
+      'Complimentary Bottled Water',
+      'Dedicated Chauffeur Guide'
     ],
-    suitability: 'The gold standard for families, groups of friends & multi-day Sri Lanka tours with substantial luggage.',
+    suitability: 'The gold standard for families, larger tour groups & multi-day Sri Lanka journeys with comfortable seating for up to 14 passengers.',
     cover_image: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80',
     gallery_images: [
       'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1000&q=80',
       'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1000&q=80'
     ],
+    is_published: true
+  },
+  {
+    id: 'veh-kdh-flat-roof',
+    slug: 'toyota-kdh-flat-roof-van',
+    brand: 'Toyota',
+    model: 'HiAce KDH Flat Roof Van',
+    year: 2021,
+    category: 'Flat Roof Van',
+    passenger_capacity: 9,
+    luggage_capacity: 0,
+    ac_equipped: true,
+    seating_type: 'Adjustable Individual Seats',
+    features: [
+      'Front & Rear Dual Air Conditioning',
+      'Compact Maneuverability for Narrow Hill Country Roads',
+      'Comfortable Ride for up to 9 Passengers',
+      'USB Charging Available',
+      'Quiet & Smooth Highway Cruising'
+    ],
+    suitability: 'Ideal for medium-sized families and small groups wanting spacious van travel across Sri Lanka.',
+    cover_image: 'https://images.unsplash.com/photo-1559297434-fae8a1916a79?auto=format&fit=crop&w=1000&q=80',
     is_published: true
   },
   {
@@ -45,65 +66,41 @@ export const VEHICLES_DATA: Vehicle[] = [
     model: 'Premio / Axio Luxury Sedan',
     year: 2021,
     category: 'Sedan',
-    passenger_capacity: 3,
-    luggage_capacity: 3,
+    passenger_capacity: 4,
+    luggage_capacity: 0,
     ac_equipped: true,
     seating_type: 'Ergonomic Leather Seating',
     features: [
       'Climate Control Air Conditioning',
       'Ultra Quiet & Smooth Suspension',
       'Tinted UV Sun Protection Glass',
-      'Spacious Boot for 3 Medium Suitcases',
       'Phone Charger & Refreshments',
-      'Ideal for couples and solo travelers'
+      'Comfortable seating for 4 passengers'
     ],
-    suitability: 'Ideal for couples, solo travelers, and business airport transfers needing smooth, private comfort.',
+    suitability: 'Ideal for couples, small families (up to 4 passengers), and business airport transfers needing smooth, private comfort.',
     cover_image: 'https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&w=1000&q=80',
     is_published: true
   },
   {
-    id: 'veh-suv-prado',
-    slug: 'toyota-land-cruiser-prado-suv',
-    brand: 'Toyota',
-    model: 'Land Cruiser Prado Luxury SUV',
+    id: 'veh-suv-vezel',
+    slug: 'honda-vezel-suv',
+    brand: 'Honda',
+    model: 'Honda Vezel Luxury SUV',
     year: 2022,
     category: 'SUV',
     passenger_capacity: 4,
-    luggage_capacity: 4,
+    luggage_capacity: 0,
     ac_equipped: true,
-    seating_type: 'Full Leather Heated/Cooled Luxury Captain Chairs',
+    seating_type: 'Premium Leather Seating',
     features: [
-      'Multi-Zone Climate Control',
-      'Full 4WD Capability for Hill Country & Safari Tracks',
-      'Elevated Road Stance & Panoramic Views',
-      'Premium Acoustic Audio System',
-      'USB-C Fast Chargers at every seat',
-      'Chilled Onboard Refreshments'
+      'Dual-Zone Automatic Climate Control',
+      'High Ground Clearance for Hill Country & Safari Roads',
+      'Elevated Road View & Panoramic Comfort',
+      'Premium Sound System & Mobile Chargers',
+      'Comfortable ride for up to 4 passengers'
     ],
-    suitability: 'Premium travelers seeking luxury elevation, mountain stability, and supreme ride comfort across all terrains.',
+    suitability: 'Premium travelers seeking luxury SUV elevation, mountain stability, and modern Japanese ride comfort across all terrains.',
     cover_image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1000&q=80',
-    is_published: true
-  },
-  {
-    id: 'veh-kdh-flat-roof',
-    slug: 'toyota-kdh-flat-roof-van',
-    brand: 'Toyota',
-    model: 'HiAce KDH Flat Roof Van',
-    year: 2020,
-    category: 'Flat Roof Van',
-    passenger_capacity: 5,
-    luggage_capacity: 4,
-    ac_equipped: true,
-    seating_type: 'Adjustable Individual Cloth Seats',
-    features: [
-      'Front & Rear Air Conditioning',
-      'Compact Maneuverability for Narrow Hill Roads',
-      'Ample Rear Luggage Space',
-      'Comfortable ride for 4 to 5 passengers',
-      'USB Charging Available'
-    ],
-    suitability: 'Budget-conscious small families and groups wanting spacious van comfort at economical rates.',
-    cover_image: 'https://images.unsplash.com/photo-1559297434-fae8a1916a79?auto=format&fit=crop&w=1000&q=80',
     is_published: true
   },
   {
@@ -113,17 +110,17 @@ export const VEHICLES_DATA: Vehicle[] = [
     model: 'Wagon R / Alto Mini Car',
     year: 2021,
     category: 'Mini Car',
-    passenger_capacity: 2,
-    luggage_capacity: 2,
+    passenger_capacity: 3,
+    luggage_capacity: 0,
     ac_equipped: true,
     seating_type: 'Compact Fabric Seats',
     features: [
       'Effective Air Conditioning',
       'High Fuel Efficiency',
-      'Ideal for Short Urban Transfers & Day Trips',
-      'Compact Luggage Capacity (1-2 small bags)'
+      'Ideal for Short Urban Transfers & City Excursions',
+      'Accommodates up to 3 passengers'
     ],
-    suitability: 'Couples or solo backpackers on short transfers or light city excursions.',
+    suitability: 'Solo travelers or small parties of up to 3 passengers for short transfers or city day trips.',
     cover_image: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1000&q=80',
     is_published: true
   },
@@ -132,43 +129,21 @@ export const VEHICLES_DATA: Vehicle[] = [
     slug: 'toyota-coaster-mini-bus',
     brand: 'Toyota',
     model: 'Coaster Luxury Mini Coach',
-    year: 2021,
+    year: 2022,
     category: 'Mini Bus',
-    passenger_capacity: 15,
-    luggage_capacity: 15,
+    passenger_capacity: 25,
+    luggage_capacity: 0,
     ac_equipped: true,
     seating_type: 'Wide Aisle Reclining Touring Seats with Armrests',
     features: [
       'Overhead Individual Air Con Vents & Reading Lights',
       'Microphone & PA System for Chauffeur-Guide',
-      'Dedicated Rear & Underfloor Luggage Compartment',
       'High Panoramic Windows for Landscape Viewing',
-      'Spacious Aisle for Easy Boarding'
+      'Spacious Aisle for Easy Boarding',
+      'Accommodates up to 25 passengers'
     ],
-    suitability: 'Extended family groups, corporate retreats, and touring parties seeking unified luxury transportation.',
+    suitability: 'Extended family groups, corporate retreats, and touring parties seeking unified luxury travel for up to 25 passengers.',
     cover_image: 'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1000&q=80',
-    is_published: true
-  },
-  {
-    id: 'veh-luxury-bus',
-    slug: 'mitsubishi-fuso-luxury-coach',
-    brand: 'Mitsubishi / Isuzu',
-    model: 'Luxury 33-Seater Touring Coach',
-    year: 2020,
-    category: 'Bus',
-    passenger_capacity: 28,
-    luggage_capacity: 30,
-    ac_equipped: true,
-    seating_type: 'Executive High-Deck Reclining Seats',
-    features: [
-      'Heavy Duty Climate Control System',
-      'Massive Underfloor Baggage Holds',
-      'Professional Tour Guide Audio Setup',
-      'High-Deck Panoramic Observation Height',
-      'Air Suspension for Gentle Long-Distance Cruising'
-    ],
-    suitability: 'Large international travel groups, tour operators, and destination wedding parties across Sri Lanka.',
-    cover_image: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80',
     is_published: true
   }
 ];

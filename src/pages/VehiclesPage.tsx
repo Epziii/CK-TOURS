@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Car, CheckCircle, ShieldCheck, Users, Briefcase, Wind } from 'lucide-react';
+import { Car, ShieldCheck, Users, Wind } from 'lucide-react';
 import { VEHICLES_DATA, VEHICLE_CATEGORIES } from '../data/vehiclesData';
 import { VehicleCard } from '../components/vehicles/VehicleCard';
 import { VehicleCategory } from '../types/database.types';

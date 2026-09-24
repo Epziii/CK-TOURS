@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Users, Briefcase, Wind, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Users, Wind, CheckCircle2, ArrowRight } from 'lucide-react';
 import { Vehicle } from '../../types/database.types';
 
 interface VehicleCardProps {
@@ -27,16 +27,9 @@ export const VehicleCard: React.FC<VehicleCardProps> = ({ vehicle }) => {
 
         {/* Capacity Quick Stats */}
         <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-warm-100 font-medium">
-          <div className="flex items-center space-x-3 bg-ceylon-950/70 backdrop-blur-sm px-2.5 py-1 rounded-lg">
-            <span className="flex items-center space-x-1">
-              <Users className="w-3.5 h-3.5 text-gold-400" />
-              <span>Up to {vehicle.passenger_capacity} Guests</span>
-            </span>
-            <span className="text-gray-400">•</span>
-            <span className="flex items-center space-x-1">
-              <Briefcase className="w-3.5 h-3.5 text-gold-400" />
-              <span>{vehicle.luggage_capacity} Luggage</span>
-            </span>
+          <div className="flex items-center space-x-1.5 bg-ceylon-950/70 backdrop-blur-sm px-2.5 py-1 rounded-lg">
+            <Users className="w-3.5 h-3.5 text-gold-400" />
+            <span>Up to {vehicle.passenger_capacity} Passengers</span>
           </div>
           {vehicle.ac_equipped && (
             <div className="flex items-center space-x-1 bg-ceylon-950/70 backdrop-blur-sm px-2 py-1 rounded-lg text-emerald-300">
